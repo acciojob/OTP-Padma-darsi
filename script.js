@@ -2,7 +2,6 @@ const inputs = document.querySelectorAll(".code");
 
 inputs.forEach((input, idx) => {
   input.addEventListener("input", (e) => {
-    // Allow only digits
     const value = e.target.value.replace(/[^0-9]/g, '');
     e.target.value = value;
 
@@ -18,3 +17,4 @@ inputs.forEach((input, idx) => {
     }
   });
 });
+
