@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1 id="verification_heading">Verify Your Account</h1>
-      <h4 id="verification_subtext">
-        Enter your 6 digit code which is already sent to your registered mobile number
-      </h4>
-    </header>
+    <main>
+        <header>
+            <h1 id="verification_heading">Verify Your Account</h1>
+            <h4 id="verification_subtext">
+                Enter your 6 digit code which is already sent to your registered mobile number
+            </h4>
+        </header>
 
-    <div class="code-container">
-      <input class="code" id="code-1" type="text" maxlength="1" autofocus />
-      <input class="code" id="code-2" type="text" maxlength="1" />
-      <input class="code" id="code-3" type="text" maxlength="1" />
-      <input class="code" id="code-4" type="text" maxlength="1" />
-      <input class="code" id="code-5" type="text" maxlength="1" />
-      <input class="code" id="code-6" type="text" maxlength="1" />
-    </div>
-  </main>
-  <script type="text/javascript" src="./script.js"></script>
+        <div class="code-container">
+            <input class="code" id="code-1" type="text" maxlength="1" autofocus inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 1"/>
+            <input class="code" id="code-2" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 2"/>
+            <input class="code" id="code-3" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 3"/>
+            <input class="code" id="code-4" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 4"/>
+            <input class="code" id="code-5" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 5"/>
+            <input class="code" id="code-6" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="OTP digit 6"/>
+        </div>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
-
