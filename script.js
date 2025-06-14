@@ -18,4 +18,3 @@ inputs.forEach((input, idx) => {
     }
   });
 });
-
