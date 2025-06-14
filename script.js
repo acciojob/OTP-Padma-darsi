@@ -1,10 +1,9 @@
-
-const inputs = document.querySelectorAll('#otp input');
+const inputs = document.querySelectorAll('.code');
 
 inputs.forEach((input, index) => {
-  input.addEventListener('input', () => {
+  input.addEventListener('input', (e) => {
     const value = input.value;
-    if (value && index < inputs.length - 1) {
+    if (value.length === 1 && index < inputs.length - 1) {
       inputs[index + 1].focus();
     }
   });
@@ -20,10 +19,11 @@ inputs.forEach((input, index) => {
     }
   });
 
-  // Optional: Only allow digits
+  // Optional: allow only numbers
   input.addEventListener('keypress', (e) => {
     if (!/[0-9]/.test(e.key)) {
       e.preventDefault();
     }
   });
 });
+
